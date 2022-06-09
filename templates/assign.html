@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<h1 align="center">PERSONAL DETAILS</h1>
+<table style="margin-left:auto;margin-right:auto;">
+<tr>
+    <td><b>NAME  </b></td>
+    <td>:</td>
+    <td>P Surya Vamsi</td>
+</tr>
+<tr>
+    <td><b>AGE  </b></td>
+    <td>:</td>
+    <td>20</td>
+</tr>
+<tr>
+    <td><b>GENDER  </b></td>
+    <td>:</td>
+    <td>Male</td>
+</tr>
+<tr>
+    <td><b>EMAIL  </b></td>
+    <td>:</td>
+    <td>suryavamsipatnala123@gmail.com</td>
+</tr>
+<tr>
+    <td><b>PHONE NO.  </b></td>
+    <td>:</td>
+    <td>7816065748</td>
+</tr>
+<tr>
+    <td><b>DOB  </b></td>
+    <td>:</td>
+    <td>12-11-2001</td>
+</tr>
+<tr>
+    <td><b>YEAR  </b></td>
+    <td>:</td>
+    <td>III-Year</td>
+</tr>
+<tr>
+    <td><b>BRANCH  </b></td>
+    <td>:</td>
+    <td>Information Technology</td>
+</tr>
+<tr>
+    <td><b>COLLEGE  </b></td>
+    <td>:</td>
+    <td>Vardhaman College of Engineering</td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+<h3 align="center">DESCRIPTION</h3>
+<p align="center">3rd year student pursuing degree in Information Technology from Vardhaman College Of Engineering,Hyderabad.<br>
+    Personable programmer with 2+ years of experience on hands on programming.<br>
+    Seeking to leverage solid technical skills and abilities to advance my career as the future IT consultant and a decent web designer.<br>
+    Worked on few projects involving python,c and java.<br>
+    Trying to gain experience and improve myself by taking up projects from clients and providing reliable solutions.</p>
+<br>
+<br>
+<br>
+
+<h1 align="center">MARKS</h1>
+<table border="3" style="margin-left:auto;margin-right:auto;">
+    <form>
+    {% for x in mymarks %}
+    <tr>
+        <td><label><b>{{x.sem}}</b></label></td>
+        <td>{{x.marks}}</td>
+    </tr>
+    {% endfor %}
+    </form>
+</table>
+</br>
+</br>
+</br>
+<h1 align="center">EXTRA CURRICULAR</h1>
+<table border="3" style="margin-left:auto;margin-right:auto;">
+    <form>
+    {% for x in myskills %}
+    <tr>
+        <td><label><b>{{x.type}}</b></label></td>
+        <td>{{x.list}}</td>
+    </tr>
+    {% endfor %}
+    </form>
+</table>
